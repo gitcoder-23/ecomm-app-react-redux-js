@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "git-personal": "https://github.com/gitcoder-23/ecomm-app-react-redux-js.git",
   "developer": "Prabhat",
+  "netlify": "https://ecomm-redux-js.netlify.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
