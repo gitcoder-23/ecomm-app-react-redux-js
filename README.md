@@ -1,6 +1,6 @@
 # Getting Started with ecomm-app-react-redux-js
 
-This project View Link- (https://github.com/facebook/create-react-app).
+This project View Link- (https://ecomm-redux-js.netlify.app/).
 
 ## Available Packages
 
