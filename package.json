@@ -1,7 +1,7 @@
 {
   "name": "ecomm-app-react-redux",
   "version": "0.1.0",
-  "git-personal": "",
+  "git-personal": "https://github.com/gitcoder-23/ecomm-app-react-redux-js.git",
   "developer": "Prabhat",
   "private": true,
   "dependencies": {
