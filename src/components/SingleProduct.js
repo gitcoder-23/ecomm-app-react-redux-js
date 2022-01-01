@@ -11,7 +11,7 @@ const SingleProduct = (props) => {
           alt={singleProduct.title}
           title={singleProduct.title}
           height="400px"
-          width="100%"
+          width="400px"
         />
       </div>
       <div className="col-md-6">
