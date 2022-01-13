@@ -1,17 +1,41 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ReactImageMagnify from 'react-image-magnify';
+
+import StarRating from 'react-star-ratings';
 
 const SingleProduct = (props) => {
   const { singleProduct, addProductCart } = props;
   return (
     <>
       <div className="col-md-6">
-        <img
+        {/* <img
           src={singleProduct.image}
           alt={singleProduct.title}
           title={singleProduct.title}
           height="400px"
           width="400px"
+        /> */}
+        <ReactImageMagnify
+          {...{
+            smallImage: {
+              imageClassName: 'small_image',
+              alt: singleProduct.image,
+              isFluidWidth: false,
+              height: 400,
+              width: 300,
+              src: singleProduct.image,
+            },
+            largeImage: {
+              src: singleProduct.image,
+              width: 1600,
+              height: 1200,
+            },
+            enlargedImageContainerDimensions: {
+              width: '220%',
+              height: '120%',
+            },
+          }}
         />
       </div>
       <div className="col-md-6">
@@ -23,6 +47,14 @@ const SingleProduct = (props) => {
           Rating: {singleProduct.rating && singleProduct.rating.rate}
           <i className="fa fa-star"></i>
         </p>
+        <StarRating
+          name="small-rating"
+          caption="Rate this component!"
+          starDimension="30px"
+          totalStars={5}
+          rating={singleProduct.rating && singleProduct.rating.rate}
+          starRatedColor="rgb(245 209 12)"
+        />
         <h3 className="display-6 fw-bold my-4">$ {singleProduct.price}</h3>
         <p className="lead">
           {singleProduct.description?.substring(1, 200)}...
